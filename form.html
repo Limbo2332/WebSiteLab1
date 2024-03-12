@@ -2,60 +2,116 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Інформація про мобільні додатки</title>
   </head>
   <body>
-    <header>
-      <div>
-        <div>
-          <nav>
-            <div>
-              <a href="mainpage.html">Мобільні додатки</a>
+    <header class="mb-3 bg-light">
+      <div class="container">
+        <div class="row">
+          <nav class="d-flex align-items-center text-center my-nav">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+              <a href="index.html" class="header-icon-text">Мобільні додатки</a>
             </div>
-            <div>
-              <a href="info.html">Інформація</a>
-              <a href="top.html">Топ додатків</a>
-              <a href="#">Ваші побажання</a>
+            <div
+              class="col-12 col-sm-8 col-md-8 col-lg-6 d-flex justify-content-around p-3 my-nav-menu align-middle align-items-center"
+            >
+              <a href="info.html" class="header-icon-text small-text"
+                >Інформація</a
+              >
+              <a href="top.html" class="header-icon-text small-text"
+                >Топ додатків</a
+              >
+              <a href="#" class="header-icon-text small-text active"
+                >Ваші побажання</a
+              >
             </div>
           </nav>
         </div>
       </div>
     </header>
-    <main>
-      <div>
-        <div>
-          <div>
-            <div>
-              <form>
-                <label for=""
-                  >Введіть мобільний додаток, який хотіли б бачити на
-                  сайті</label
-                >
-                <input type="text" aria-describedby="helpId" />
-                <small id="helpId"
+    <content class="index">
+      <div class="container">
+        <div class="row">
+          <div class="content my-0 mx-auto mb-4 mt-4">
+            <div class="mb-3 ms-3 form">
+              <form action="" novalidate id="form">
+                <div class="form-group">
+                  <label class="form-label"
+                    >Введіть ваше ім'я та прізвище</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="NameAndSurname"
+                    id="NameAndSurname"
+                    placeholder="Олексій Воробйов"
+                  />
+                  <label class="form-label d-none validate-label"></label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label"
+                    >Введіть ваш номер телефону для зворотнього зв'язку</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phoneNumber"
+                    id="phoneNumber"
+                    placeholder="+380683373177"
+                    value="+380"
+                  />
+                  <label class="form-label d-none validate-label"></label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label"
+                    >Введіть мобільний додаток, яким користуєтесь</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="mobileApp"
+                    id="mobileApp"
+                    placeholder="TikTok"
+                  />
+                  <label class="form-label d-none validate-label"></label>
+                </div>
+
+                <small id="helpId" class="form-text text-muted"
                   >Ми обов'язково врахуємо ваші побажання!</small
                 >
-                <button type="submit">Відправити</button>
+
+                <button class="btn btn-primary" type="submit">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </content>
 
-    <footer>
-      <div>
-        <div>
-          <div>
-            <p>© Copyright 2024</p>
+    <footer class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 p-3 d-flex align-items-center">
+            <p class="footer-text mb-0">© Copyright 2024</p>
           </div>
-          <div>
-            <p>By Oleksii Vorobiov, IS-11</p>
+          <div class="offset-6 col-3 d-flex align-items-center">
+            <p class="footer-text mb-0">By Oleksii Vorobiov, IS-11</p>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>

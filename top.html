@@ -4,53 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Інформація про мобільні додатки</title>
   </head>
   <body>
-    <header>
-      <div>
-        <div>
-          <nav>
-            <div>
-              <a href="mainpage.html">Мобільні додатки</a>
+    <header class="mb-3 bg-light">
+      <div class="container">
+        <div class="row">
+          <nav class="d-flex align-items-center text-center my-nav">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+              <a href="index.html" class="header-icon-text">Мобільні додатки</a>
             </div>
-            <div>
-              <a href="info.html">Інформація</a>
-              <a href="#">Топ додатків</a>
-              <a href="form.html">Ваші побажання</a>
+            <div
+              class="col-12 col-sm-8 col-md-8 col-lg-6 d-flex justify-content-around p-3 my-nav-menu align-middle align-items-center"
+            >
+              <a href="info.html" class="header-icon-text small-text"
+                >Інформація</a
+              >
+              <a href="#" class="header-icon-text small-text active"
+                >Топ додатків</a
+              >
+              <a href="form.html" class="header-icon-text small-text"
+                >Ваші побажання</a
+              >
             </div>
           </nav>
         </div>
       </div>
     </header>
-    <main>
-      <div>
-        <div>
-          <h2>Топ 10 найпопулярніших додатків</h2>
-          <ol>
-            <li>TikTok</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>WhatsApp</li>
-            <li>Telegram</li>
-            <li>Snapchat</li>
-            <li>Zoom</li>
-            <li>Spotify</li>
-            <li>Messenger</li>
-            <li>CapCut</li>
+    <content class="index">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center text-lowercase first-letter mb-4 mt-3">
+            Топ 10 найпопулярніших додатків
+          </h2>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">TikTok</li>
+            <li class="list-group-item">Instagram</li>
+            <li class="list-group-item">Facebook</li>
+            <li class="list-group-item">WhatsApp</li>
+            <li class="list-group-item">Telegram</li>
+            <li class="list-group-item">Snapchat</li>
+            <li class="list-group-item">Zoom</li>
+            <li class="list-group-item">Spotify</li>
+            <li class="list-group-item">Messenger</li>
+            <li class="list-group-item">CapCut</li>
           </ol>
         </div>
       </div>
-    </main>
+    </content>
 
-    <footer>
-      <div>
-        <div>
-          <div>
-            <p>© Copyright 2024</p>
+    <footer class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 p-3 d-flex align-items-center">
+            <p class="footer-text mb-0">© Copyright 2024</p>
           </div>
-          <div>
-            <p>By Oleksii Vorobiov, IS-11</p>
+          <div class="offset-6 col-3 d-flex align-items-center">
+            <p class="footer-text mb-0">By Oleksii Vorobiov, IS-11</p>
           </div>
         </div>
       </div>
